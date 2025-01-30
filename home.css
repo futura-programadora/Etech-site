@@ -1,0 +1,530 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+header .buttons a {
+    margin-left: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+header .buttons .sign-in {
+    background-color: #fff;
+    border: 1px solid #6C63FF;
+    color: #6C63FF;
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+
+}
+
+header .buttons .sign-in:hover {
+    background-color: #6C63FF; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+header .buttons .free-trial {
+    background-color: #6C63FF;
+    color: #fff;
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+header .buttons .free-trial:hover {
+    background-color: #5a52d2; /* Cor de fundo mais escura ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+#estudante {
+    width: 90%;
+    height: auto;
+    max-width: 600px; /* Limite máximo de 600px de largura */
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F3F4FF;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .cta-buttons a {
+    margin: 0 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.hero .cta-buttons .enroll-now {
+    background-color: #6C63FF;
+    color: #fff;
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.hero .cta-buttons .enroll-now:hover {
+    background-color: #5a52d2; /* Cor mais escura ao passar o mouse */
+    color: #fff;
+}
+
+.hero .cta-buttons .watch-video {
+    background-color: #fff;
+    border: 1px solid #6C63FF;
+    color: #6C63FF;
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.hero .cta-buttons .watch-video:hover {
+    background-color: #6C63FF; /* Cor de fundo do botão ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    border: 1px solid #6C63FF; /* Mantém a borda */
+}
+
+.hero img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #C264B6;
+    flex-wrap: wrap; /* Para garantir que as imagens se ajustem melhor quando a tela for menor */
+}
+
+.partners img {
+    margin: 0 10px;
+    max-width: 100px; /* Definir o tamanho máximo das imagens */
+    height: auto;
+    width: auto; /* Usar o valor 'auto' para que as imagens não se estiquem */
+    max-height: 80px; /* Limita a altura das imagens para manter o layout equilibrado */
+}
+
+
+.search-courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F3F4FF;
+}
+
+.search-courses input {
+    padding: 15px;
+    width: 60%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-courses button {
+    padding: 15px 30px;
+    background-color: #FF6584;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.benefits .text {
+    max-width: 500px;
+}
+
+.benefits .text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.benefits .text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits .text ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.benefits .text ul li i {
+    color: #FF6584;
+    margin-right: 10px;
+}
+
+.benefits img {
+    max-width: 100%;
+    height: auto;
+}
+
+.popular-courses {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #FF6584 0%, #6C63FF 100%);
+    color: #fff;
+}
+
+.popular-courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.popular-courses .courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.popular-courses .course {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.popular-courses .course img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popular-courses .course h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.popular-courses .course p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.popular-courses .course .price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.popular-courses .course .instructor {
+    display: flex;
+    align-items: center;
+}
+
+.popular-courses .course .instructor img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.instructor-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.instructor-section .text {
+    max-width: 500px;
+}
+
+.instructor-section .text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.instructor-section .text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.instructor-section .text ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.instructor-section .text ul li i {
+    color: #FF6584;
+    margin-right: 10px;
+}
+
+.instructor-section img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    margin: 50px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #FF6584 0%, #6C63FF 100%);
+    color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonials .testimonial-item {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.testimonials .testimonial-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial-item p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/*media queries*/
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .instructor-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instructor-section .text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .instructor-section .text h2 {
+        font-size: 28px;
+    }
+
+    .instructor-section .text p {
+        font-size: 16px;
+    }
+
+    .instructor-section .text ul li {
+        font-size: 16px;
+    }
+
+    .instructor-section img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .benefits {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits .text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .benefits .text h2 {
+        font-size: 28px;
+    }
+
+    .benefits .text ul li {
+        font-size: 16px;
+    }
+
+    .benefits img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para telas pequenas (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    header .logo {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    header nav a {
+        margin: 0 8px; /* Menor espaçamento entre links */
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+
+    header .buttons a {
+        padding: 8px 16px; /* Reduzir o tamanho do botão */
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        margin-left: 10px; /* Menor margem entre os botões */
+    }
+
+    header .buttons .sign-in,
+    header .buttons .free-trial {
+        padding: 8px 16px; /* Menor tamanho dos botões */
+        font-size: 14px; /* Font menor */
+    }
+
+     /* Estilizando os botões dentro da .cta-buttons */
+     .hero .cta-buttons a {
+        margin: 0 5px; /* Menor margem entre os botões */
+        padding: 8px 16px; /* Reduzir o tamanho do padding */
+        font-size: 12px; /* Font menor */
+    }
+
+    .hero .cta-buttons .enroll-now {
+        background-color: #6C63FF;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .hero .cta-buttons .enroll-now:hover {
+        background-color: #5a52d2; /* Cor mais escura ao passar o mouse */
+        color: #fff;
+    }
+
+    .hero .cta-buttons .watch-video {
+        background-color: #fff;
+        border: 1px solid #6C63FF;
+        color: #6C63FF;
+        transition: all 0.3s ease;
+    }
+
+    .hero .cta-buttons .watch-video:hover {
+        background-color: #6C63FF; /* Cor de fundo do botão ao passar o mouse */
+        color: #fff;
+        border: 1px solid #6C63FF; /* Mantém a borda */
+    }
+}
+
+
+
+/*menu*/
+
+/* Estilo do hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    justify-content: space-between;
+    margin-left: 10px;
+    
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+/* Menu oculto para telas menores */
+#navMenu {
+    display: flex; /* Para telas grandes, o menu continua visível */
+}
+
+/* Estilos para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Oculte o menu em telas pequenas */
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    /* Exibir o hambúrguer */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Menu visível quando "active" */
+    #navMenu.active {
+        display: flex;
+    }
+}
