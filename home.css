@@ -25,6 +25,7 @@ header nav a {
     font-weight: 600;
 }
 
+
 header .buttons a {
     margin-left: 15px;
     padding: 10px 20px;
@@ -80,6 +81,8 @@ header .buttons .free-trial:hover {
     font-size: 18px;
     margin-bottom: 30px;
 }
+
+
 
 .hero .cta-buttons a {
     margin: 0 10px;
@@ -355,7 +358,7 @@ footer {
 
 
 /* Responsividade para telas pequenas */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .instructor-section {
         flex-direction: column;
         text-align: center;
@@ -385,7 +388,7 @@ footer {
 }
 
 /* Responsividade para telas pequenas */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .benefits {
         flex-direction: column;
         text-align: center;
@@ -411,7 +414,54 @@ footer {
 }
 
 /* Estilos para telas pequenas (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    .testimonials .testimonial-item {
+        background-color: #fff;
+        color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        max-width: 80vw;
+        text-align: left;
+    }
+
+    .testimonials .testimonial {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .popular-courses .courses {
+        display: flex;
+        flex-direction: column;
+       
+        color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .course {
+        margin: 20px;
+    }
+    
+    .popular-courses .course {
+        width: 100%; /* Faz com que cada curso ocupe 100% da largura disponível */
+        box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+        margin: auto;
+        max-width: 80vw;
+        text-align: center;
+        
+    }
+
+    .popular-courses .course {
+        width: 100%; /* Em telas menores, cada curso ocupa a largura total */
+    }
+    
+
     header {
         display: flex;
         justify-content: space-between;
@@ -502,7 +552,7 @@ footer {
 }
 
 /* Estilos para telas menores (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     /* Oculte o menu em telas pequenas */
     #navMenu {
         display: none;
